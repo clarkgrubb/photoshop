@@ -2,7 +2,7 @@
 
 var height = app.activeDocument.height;
 var width = app.activeDocument.width;
-var delta = Math.abs(height - width) / 2
+var delta = Math.abs(height - width) / 2;
 
 if (height > width) {
   app.activeDocument.crop([0, delta, width, height - delta])
